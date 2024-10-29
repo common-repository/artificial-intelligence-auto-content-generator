@@ -1,0 +1,128 @@
+@keyframes leftright {
+    0% {
+      left: 0%;margin-left: -50px
+    }
+    100% {
+      left: 100%; margin-left: -50px
+    }
+}
+.momo-fe-working{
+    background-color: transparent;
+    height: 5px;
+    width: 100%;
+    border-radius: 10px;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    display: block;
+    overflow: hidden;
+}
+.momo-fe-working.show{
+    display:block;
+}
+.momo-fe-working.show::before{
+    content: "";
+    width: 200px;
+    height: 100%;
+    display: block;
+    background-color: #5c62ff;
+    position: absolute;
+    left: 0;
+    animation-name: leftright;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: none;
+    animation-delay: 0s;
+}
+/*** Working Animation ***/
+.momo-chatgpt-ui-container{
+    height: 65vh;
+    width: 100%;
+    position: relative;
+    display: block;
+}
+.momo-chatgpt-uic-top-section{
+    padding-top: 15px;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+.momo-chatgpt-uic-middle-section{
+    width: 100%;
+    align-content: space-between;
+    overflow: hidden;
+    min-height: 60vh;
+    max-height: 60vh;
+}
+.momo-chatgpt-messages{
+    /* display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end; */
+    overflow-x: hidden;
+    max-height: 58vh;
+    padding: 8px;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    position: relative;
+}
+.momo-chatgpt-ui-header{
+    font-size: 16px;
+}
+.momo-chatgpt-ui-subheader{
+    font-size: 32px;
+    font-weight: 700;
+}
+.momo-chatgpt-uic-bottom-section{
+    padding-top: 8px;
+    position: relative;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+.momo-chatgpt-sender-box{
+    position: relative;
+}
+.momo-chatgpt-sender-box .bx{
+    position: absolute;
+    right: 26px;
+    top: 8px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #5c62ff;
+    transition: background-color 0.5s ease;
+}
+.momo-chatgpt-sender-box .bx:hover{
+    background-color: #cecece;
+}
+input.momo-chatgpt-sender-input{
+    width: 96%;
+    padding: 12px;
+    border-radius: 20px;
+    border: 1px solid #cecece;
+}
+input.momo-chatgpt-sender-input:focus{
+    outline: none;
+    border: 1px solid #5c62ff;
+}
+.momo-chat-row{
+    display: flex;
+    margin-bottom: 7px;
+}
+.momo-chat-left {
+    width: 20%;
+    text-align: left;
+}     
+.momo-chat-right {
+    width: 80%;
+}
+@media screen and (max-width: 600px) {
+    .momo-chat-column {
+        width: 100%;
+    }
+}

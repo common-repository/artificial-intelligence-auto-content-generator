@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "momo-acg-forms/momo-form-container",
+  "version": "0.1.0",
+  "title": "MoMo Forms - Container",
+  "category": "widgets",
+  "icon": "logo.svg",
+  "description": "Container to hold all form elements.",
+  "supports": {
+    "html": false
+  },
+  "textdomain": "momo-acg-forms",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}

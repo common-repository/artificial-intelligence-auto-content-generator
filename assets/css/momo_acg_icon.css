@@ -1,0 +1,9 @@
+#adminmenu .toplevel_page_momoacg div.wp-menu-image:before {
+    font-family: 'openai' !important;
+    content: '\e900';
+}
+@media only screen and (max-width: 960px) {
+    #adminmenu .toplevel_page_momoacg div.wp-menu-image:before {
+        margin-top: 0;
+    }
+}

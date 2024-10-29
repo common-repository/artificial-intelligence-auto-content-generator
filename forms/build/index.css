@@ -1,0 +1,66 @@
+/*!****************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/editor.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-create-block-momo-acg-forms {
+  border: 1px dotted #f00;
+}
+
+.momo-acg-ai-form-submit-bottom {
+  margin: 8px;
+  text-align: center;
+}
+
+.momo-acg-ai-form-submit-bottom button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 160px;
+  height: 42px;
+  border-radius: 21px;
+  background: #FF6978;
+  box-shadow: 0 10px 30px 0 rgba(255, 105, 120, 0.5);
+  -moz-box-shadow: 0 10px 30px 0 rgba(255, 105, 120, 0.5);
+  -webkit-box-shadow: 0 10px 30px 0 rgba(255, 105, 120, 0.5);
+  -o-box-shadow: 0 10px 30px 0 rgba(255, 105, 120, 0.5);
+  -ms-box-shadow: 0 10px 30px 0 rgba(255, 105, 120, 0.5);
+  transition: all 0.4s;
+}
+
+.momo-forms-result-block {
+  padding: 13px;
+  background: #554ec8;
+  color: #FFF;
+  border-radius: 8px;
+  display: none;
+  margin-top: 25px;
+}
+
+.momo-forms-result-block.show {
+  display: block;
+}
+
+.momo-toolbar-group .components-spinner {
+  width: 20px !important;
+  height: 20px !important;
+  margin: 13px 11px 0px !important;
+  color: #FF6978 !important;
+}
+
+.momo-toolbar-group .components-spinner circle,
+.momo-toolbar-group .components-spinner path {
+  stroke-width: 4.5px;
+}
+
+/*# sourceMappingURL=index.css.map*/

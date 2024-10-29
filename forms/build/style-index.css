@@ -1,0 +1,173 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+@keyframes leftright {
+  0% {
+    left: 0%;
+    margin-left: -50px;
+  }
+  100% {
+    left: 100%;
+    margin-left: -50px;
+  }
+}
+.momo-form-working {
+  background-color: transparent;
+  height: 5px;
+  width: 100%;
+  border-radius: 10px;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  display: block;
+  overflow: hidden;
+}
+
+.momo-form-working.show {
+  display: block;
+}
+
+.momo-form-working.show::before {
+  content: "";
+  width: 200px;
+  height: 100%;
+  display: block;
+  background-color: #FF6978;
+  position: absolute;
+  left: 0;
+  animation-name: leftright;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: none;
+  animation-delay: 0s;
+}
+
+.wp-block-create-block-momo-acg-forms {
+  background-color: #21759b;
+  color: #fff;
+  padding: 2px;
+}
+
+.momo-forms-result-block {
+  background: #554ec8;
+  color: #FFF;
+  border-radius: 8px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.momo-forms-result-block.show {
+  margin-top: 25px;
+  padding: 13px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.momo-form-element-block {
+  margin-bottom: 20px;
+}
+
+.momo-acg-ai-form-container {
+  padding: 1em 3em 2em 3em;
+  margin: 0em auto;
+  background-color: #fff;
+  border-radius: 4.2px;
+  box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.momo-acg-ai-form-container h3 {
+  color: #FF6978;
+  margin: 12px 0;
+  font-weight: 600;
+}
+
+.momo-acg-ai-form-container h4 {
+  color: #726363;
+  margin: 12px 0;
+  font-weight: 500;
+}
+
+.momo-acg-form-hr {
+  border: 1px solid #cecece;
+  margin: 12px 0;
+  display: block;
+}
+
+.momo-acg-ai-form-container label {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 2px;
+  display: block;
+}
+
+.momo-acg-ai-form-container label.momo-radio-label,
+.momo-acg-ai-form-container label.momo-checkbox-label {
+  display: inline-block;
+  font-weight: 400;
+  margin-left: 12px;
+}
+
+.momo-acg-ai-form-container input[type=text],
+.momo-acg-ai-form-container textarea {
+  width: 100%;
+  padding: 1em;
+  line-height: 1.4;
+  background-color: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+}
+
+.momo-acg-ai-form-container select {
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  padding: 11px 20px;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.momo-acg-ai-form-submit-bottom {
+  margin: 8px;
+  text-align: center;
+}
+
+.momo-acg-ai-form-submit-bottom button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-size: 12px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 160px;
+  height: 42px;
+  border-radius: 21px;
+  background: #FF6978;
+  box-shadow: 0 10px 30px 0 rgba(255, 105, 120, 0.5);
+  -moz-box-shadow: 0 10px 30px 0 rgba(255, 105, 120, 0.5);
+  -webkit-box-shadow: 0 10px 30px 0 rgba(255, 105, 120, 0.5);
+  -o-box-shadow: 0 10px 30px 0 rgba(255, 105, 120, 0.5);
+  -ms-box-shadow: 0 10px 30px 0 rgba(255, 105, 120, 0.5);
+  transition: all 0.4s;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

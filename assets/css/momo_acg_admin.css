@@ -1,0 +1,169 @@
+.momo-pro-label {
+    padding: 4px 8px;
+    background: #d63638;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin-left: 22px;
+    border-radius: 12px;
+}
+/**** Debug Log Page ****/
+.momo-be-textarea-style{
+    width: auto;
+    height: 200px;
+    padding: 1em;
+    font-size: 12px;
+    overflow: scroll;
+    background-color: #0c0c0c;
+    color: #FFF;
+}
+.momo-be-textarea-style span{
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.momo-be-textarea-style span.bad{
+    color: red;
+}
+.momo-be-textarea-style span.good{
+    color: green;
+}
+.momo-be-textarea-style span.detail{
+    color: yellow;
+}
+.momo-be-textarea-style span.code{
+    color: #2f92e8;
+}
+.momo-be-textarea-style code{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2px;
+    display: block;
+}
+/**** ends Debug Log Page ****/
+
+/** Credit Page additional **/
+.momo-cs-heading{
+    font-weight: 800;
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    background-color: #e8e9eb;
+    padding: 10px 0 10px 0;
+}
+table.momo-be-current-plan-table{
+    font-size: 14px;
+    margin-top: 12px;
+    width: 100%;
+    border: 0;
+}
+table.momo-be-current-plan-table th,
+table.momo-be-current-plan-table td{
+    padding: 8px 4px;
+    border: 0;
+    margin: 0;
+    border-bottom: 1px solid #cecece;
+}
+table.momo-be-current-plan-table th{
+    font-size: 16px;
+    font-weight: 800;
+}
+.momo-cs-add-plan-btn,
+.momo-cs-add-ft-model-btn,
+.momo-cs-add-new-qa-btn{
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    display: flex;
+    font-weight: 800;
+}
+.momo-cs-add-plan-btn i,
+.momo-cs-add-ft-model-btn i,
+.momo-cs-add-new-qa-btn i{
+    padding-right: 6px;
+    color: #FF6978;
+}
+#momo-be-form .momo-cs-plan-form label.regular{
+    color: #000;
+}
+.momo-cs-plan-form .momo-input-group-text{
+    min-width: 45px;
+    text-align: center;
+    line-height: 2;
+    display: block;
+}
+.momo-cs-plan-form .momo-input-group{
+    width: 80%;
+    min-width: 300px;
+}
+.momo-cs-plan-form .momo-full-block{
+    width: 100%;
+}
+#momo-be-form  .momo-cs-plan-form .momo-input-group input[type="number"].prepend {
+    width: 100%;
+}
+/** Ends Credit Page additional **/
+/** Single Create Page **/
+.auto-content-generator_page_momoacg-create{
+    background-color: #F7F7F7;
+}
+.momo-acg-single-page-create {
+    padding: 26px;
+}
+.momo-acg-single-page-create span.header-title{
+    font-weight: 800;
+    font-size: 32px;
+}
+div.momo-acg-single-page-create div.momo-be-mb-form div.momo-be-section-block{
+    border-top: none;
+    border-bottom: none;
+}
+p.momo-be-support-para{
+    font-size: 16px;
+    line-height: 36px;
+}
+p.momo-be-support-para.momo-support-link{
+    text-align: center;
+}
+p.momo-be-support-para.momo-support-link a{
+    text-decoration: none;
+}
+
+span.momo-cb-db-count{
+    margin-right: 10px;
+    display: inline-block;
+    font-weight: 600;
+}
+span.momo-cb-db-count em{
+    font-size: 46px;
+    line-height: 100px;
+    border-radius: 50%;
+    color: #FFF;
+    height: 100px;
+    width: 100px;
+    background-color: #2f92e8;
+    display: block;
+    text-align: center;
+    font-style: normal;
+}
+span.momo-cb-db-info{
+    display: inline-block;
+}
+span.momo-cb-db-info em{
+    text-transform: uppercase;
+    font-style: normal;
+    font-size: 22px;
+}
+span.momo-cb-db-count.dr em{
+    background-color: #2f92e8;
+}
+span.momo-cb-db-count.ds em{
+    background-color: #34b81a;
+}
+span.momo-cb-db-count.mr em{
+    background-color: #b81143;
+}
+span.momo-cb-db-count.ms em{
+    background-color: #e8dc2f;
+}

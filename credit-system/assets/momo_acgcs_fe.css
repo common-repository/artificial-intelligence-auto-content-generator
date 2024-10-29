@@ -1,0 +1,1069 @@
+
+.momo-acg-cs-generator {
+    padding: 26px;
+}
+.momo-acg-cs-generator span.header-title{
+    font-weight: 800;
+    font-size: 32px;
+}
+div.momo-acg-cs-generator div.momo-be-mb-form div.momo-be-section-block{
+    border-top: none;
+    border-bottom: none;
+}
+.momo-fe-msg-block{
+    background-color:#f7f9e8;
+    border-left: 4px solid #afa40d;
+    color: #201d16;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0;
+}
+.momo-fe-msg-block{
+    display: none;
+}
+.momo-fe-msg-block.show{
+    display: block;
+}
+.momo-fe-msg-block.info{
+    background: #cce5ff;
+    border-left-color: #004085;
+    color: #004085;
+}
+.momo-fe-msg-block.warning{
+    background: #f2dede;
+    color: #a94442;
+    border-left-color:#a94442;
+}
+.momo-fe-msg-block.notontop{
+    margin-top: 20px;
+}
+.momo-fe-msg-block p{
+    margin : 0 0 2px;
+}
+.momo-loading-fe::before{
+    content: "";
+    background: url(images/momo-working.gif) rgba(245, 245, 245, 0.71) center center no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    display: block;
+}
+.momo-cs-plan-relative-container{
+    display: block;
+    position: relative;
+}
+.momo-cs-plan-holder-container{
+    padding: 8px;
+    font-size: 14px;
+}
+.momo-cs-plan-holder-container span.momo-plan-single-holder{
+    padding: 8px;
+    padding-right: 14px;
+    margin-bottom: 16px;
+    border: 1px solid #cecece;
+    border-radius: 8px;
+    background: #FFF;
+    cursor: pointer;
+    -webkit-transition : border 500ms ease-out;
+    -moz-transition : border 500ms ease-out;
+    -o-transition : border 500ms ease-out;
+    transition : border 500ms ease-out;
+    display: block;
+    color: #333333;
+}
+.momo-cs-plan-holder-container .momo-plan-single-holder.is-active,
+.momo-cs-plan-holder-container .momo-plan-single-holder:hover{
+    border: 1px solid #FF6978;
+}
+.momo-cs-plan-holder-container .momo-left-holder{
+    margin-right: 15px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top:6px;
+}
+.momo-cs-plan-holder-container .momo-left-holder input[type='radio']{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    height: 20px;
+    width: 20px;
+    outline: none;
+    margin: 0;
+    cursor: pointer;
+    border: 2px solid #7C96B2;;
+    background: transparent;
+    border-radius: 50%;
+    justify-self: end;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    overflow: hidden;
+    transition: border 0.5s ease;
+}
+.momo-cs-plan-holder-container .momo-left-holder input[type="radio"]::before,
+.momo-cs-plan-holder-container .momo-left-holder input[type="radio"]::after {
+    content: "";
+    display: flex;
+    justify-self: center;
+    border-radius: 50%;
+}
+.momo-cs-plan-holder-container .momo-left-holder input[type=radio]::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+    z-index: 1;
+    opacity: 1;
+}
+.momo-cs-plan-holder-container .momo-left-holder input[type=radio]::after {
+    position: relative;
+    width: calc(100%/2);
+    height: calc(100%/2);
+    background: #FF6978;
+    top: 100%;
+    transition: top 0.5s cubic-bezier(0.48, 1.97, 0.5, 0.63);
+}
+.momo-cs-plan-holder-container .momo-left-holder input[type=radio]:checked::after {
+    top: 0%;
+}
+.momo-cs-plan-holder-container .momo-left-holder input[type=radio]:checked::before {
+    opacity: 0;
+}
+.momo-cs-plan-holder-container .momo-left-holder  input[type="radio"]:checked {
+    border-color: #FF6978;
+}
+.momo-cs-plan-holder-container .momo-middle-holder{
+    display: inline-block;
+}
+.momo-cs-plan-holder-container .momo-middle-holder .momo-title,
+.momo-cs-plan-holder-container .momo-middle-holder .momo-tokens{
+    display: block;
+}
+.momo-cs-plan-holder-container .momo-middle-holder .momo-title{
+    font-weight: 600;
+    font-size: 18px;
+}
+.momo-cs-plan-holder-container .momo-right-holder{
+    float: right;
+}
+.momo-plan-button-holder .momo-cs-continue-checkout-cart{
+    display: block;
+    background-color: #FF6978;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 6px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+@-webkit-keyframes fadeOut {
+    from { opacity: 1; }
+      to { opacity: 0; }
+}
+@keyframes fadeOut {
+    from { opacity: 1; }
+      to { opacity: 0; }
+}
+#adminmenu .toplevel_page_momoacg div.wp-menu-image:before {
+    font-family: 'openai' !important;
+    content: '\e900';
+    margin-top: 10px;
+}
+#momo-be-form .bx{
+    font-size: 22px;
+}
+.momo-mb-10{
+    margin-bottom: 10px;
+}
+.momo-mb-15{
+    margin-bottom: 15px;
+}
+.momo-mb-20{
+    margin-bottom: 20px;
+}
+.momo-mb-30{
+    margin-bottom: 30px;
+}
+.momo-mt-30{
+    margin-top: 30px!important;
+}
+.momo-min-h-30{
+    min-height: 30px;
+}
+.momo-m-40{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.momo-mt-15{
+    margin-top: 15px!important;
+}
+.momo-mt-10{
+    margin-top: 10px!important;
+}
+.momo-mt-5{
+    margin-top: 5px!important;
+}
+.momo-pl-5{
+    padding-left: 5px;
+}
+.momo-ml-200{
+    margin-left: 200px!important;
+}
+.momo-no-border{
+    border: none!important;
+}
+.momo-no-padding-bottom{
+    padding-bottom: 0!important;
+}
+.momo-no-bborder{
+    border-bottom: none!important;
+}
+.momo-no-tborder{
+    border-top: none!important;
+}
+.momo-no-background{
+    background: transparent!important;
+}
+.momo-bborder{
+    border-bottom: 1px solid #dbdbdb;
+}
+.momo-margin-minus{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.momo-padding-plus{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.momo-hidden{
+    display: none!important;
+    -webkit-animation: fadeOut 1s;
+    animation: fadeOut 1s;
+}
+.momo-show{
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+    display: block;
+}
+.momo-be-float-right{
+    float: right;
+}
+.momo-be-float-left{
+    float: left;
+}
+.momo-be-center{
+    text-align: center;
+}
+.momo-w-80{
+    width: 80%;
+}
+/** Buttons **/
+.momo-be-btn{
+    margin-left: 0;
+    border: none;
+    font: bold 14px 'Open Sans', arial;
+    line-height: normal;
+    text-transform: uppercase;
+    line-height: 150%;
+    display: inline-block;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 4px 15px;
+    border-radius: 20px;
+    margin-bottom: 3px;
+    text-decoration: none;
+}
+.momo-be-btn-primary{
+    background: #FF6978;
+    color: #FFF;
+}
+.momo-be-btn-secondary{
+    background: #0099CC;
+    color: #FFF;
+}
+.momo-be-btn-trinary{
+    background: #3f6e02;
+    color: #FFF;
+}
+.momo-be-btn-secondary.regenerate{
+    background: #447bf1;
+}
+.momo-be-btn.unlink-location{
+    background: #4b908f;
+}
+.momo-be-btn-extra{
+    background: #3d3d3d;
+    color: #FFF;
+}
+.momo-be-btn:hover,
+.momo-be-btn:focus{
+    color: #FFF;
+    opacity: 0.7; 
+}
+/** Backend Working or Loading **/
+@keyframes leftright {
+    0% {
+      left: 0%;margin-left: -50px
+    }
+    100% {
+      left: 100%; margin-left: -50px
+    }
+}
+.momo-be-working{
+    background-color: transparent;
+    height: 5px;
+    width: 100%;
+    border-radius: 10px;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    display: block;
+    overflow: hidden;
+}
+.momo-be-working.show{
+    display:block;
+}
+.momo-be-working.show::before{
+    content: "";
+    width: 200px;
+    height: 100%;
+    display: block;
+    background-color: #FF6978;
+    position: absolute;
+    left: 0;
+    animation-name: leftright;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: none;
+    animation-delay: 0s;
+}
+.momo-be-working-parent-holder{
+    position: relative;
+    margin-top: -6px;
+    margin-bottom: 6px;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+/** Helper ***/
+.momo-be-helper {
+    margin-left: 12px;
+    font-size: 15px;
+    color: #90999d;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+#momo-be-form .momo-be-helper.bx{
+    font-size: 15px;
+}
+.momo-be-helper .momo-be-helper-text {
+    visibility: hidden;
+    min-width: 280px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px;
+    padding-bottom: 12px;
+    position: absolute;
+    z-index: 2;
+    bottom: 125%;
+    opacity: 0;
+    transition: opacity 0.3s;
+    margin-left:-137px;
+    left: 0;
+}
+.momo-be-helper .momo-be-helper-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+  
+.momo-be-helper:hover .momo-be-helper-text {
+    visibility: visible;
+    opacity: 1;
+}
+/*********Form and Elements*****************/
+#momo-be-form ol li{
+    font-size: 14px;
+}
+#momo-be-form input[type="text"], 
+#momo-be-form input[type="number"],
+#momo-be-form textarea,
+#momo-be-form select,
+.momo-be-mb-form input[type="text"],
+.momo-be-mb-form input[type="number"], 
+.momo-be-mb-form textarea, 
+.momo-be-mb-form select{
+    width: 100%;
+    color: #666666;
+    padding: 5px 8px;
+    border-radius: 5px;
+    border: 1px solid #b3afaf;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+    background-color: #fff;
+    color: #32373c;
+    outline: 0;
+    transition: 50ms border-color ease-in-out;
+    display: block;
+    width: 80%;
+    margin-top: 5px;
+}
+#momo-be-form textarea.full-width,
+.momo-be-mb-form textarea.full-width{
+    width: 100%;
+}
+#momo-be-form input[type="text"].inline,
+#momo-be-form input[type="number"].inline,
+#momo-be-form input[type="range"].inline,
+#momo-be-form textarea.inline,
+#momo-be-form select.inline,
+.momo-be-mb-form input[type="text"].inline,
+.momo-be-mb-form input[type="number"].inline,
+.momo-be-mb-form input[type="range"].inline,
+.momo-be-mb-form textarea.inline,
+.momo-be-mb-form select.inline{
+    display: inline-block;
+    max-width: 250px;
+}
+#momo-be-form input[type="text"].momo-small,
+#momo-be-form input[type="number"].momo-small,
+.momo-be-mb-form input[type="text"].momo-small,
+.momo-be-mb-form input[type="number"].momo-small{
+    max-width: 80px;
+}
+#momo-be-form input[type="text"].momo-half,
+#momo-be-form input[type="number"].momo-half,
+.momo-be-mb-form input[type="text"].momo-half,
+.momo-be-mb-form input[type="number"].momo-half,
+.momo-half-block{
+    width: 50%;
+    min-width: 300px
+}
+#momo-be-form input[type="text"].inline.wide,
+.momo-be-mb-form input[type="text"].inline.wide{
+    min-width: 60%;
+    display: inline-block;
+}
+#momo-be-form input:focus,
+#momo-be-form textarea:focus,
+#momo-be-form select:focus,
+.momo-be-mb-form input:focus,
+.momo-be-mb-form textarea:focus,
+.momo-be-mb-form select:focus{
+    border-color:#5b9dd9;box-shadow:0 0 2px rgba(30,140,190,.8);outline:2px solid transparent
+}
+#momo-be-form label.regular,
+.momo-be-mb-form label.regular{
+    font-weight: normal;
+    color: #6F6F6F;
+    margin-bottom: 1px;
+    display: inline-block;
+    font-size: 14px;
+}
+#momo-be-form label.inline,
+.momo-be-mb-form label.inline{
+    display: inline-block!important;
+    color: #1e1e1e;
+    margin-right: 11px;
+    min-width: 200px; 
+}
+#momo-be-form label.no-min-width,
+.momo-be-mb-form label.no-min-width{
+    min-width: auto;
+}
+#momo-be-form span.required,
+.momo-be-mb-form span.required{
+    margin-top: 11px;
+    display: block;
+    margin-left: 17px;
+}
+#momo-be-form span.required label,
+.momo-be-mb-form span.required label{
+    color: #455570;
+    font-weight: bold;
+}
+/***************************/
+/*** Yes No Scwitch ***/
+/**** Toggle Switch ***/
+.momo-be-toggle-container{
+    width: 125px;
+    text-align: center;
+}
+.momo-be-toggle-container-label{
+        padding-left: 10px;
+        line-height: 1.8;
+}
+.momo-be-toggle-container .switch{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 40px;
+    height: 20px;
+    padding: 3px;
+    background-color: #f7f7f7;
+    border-radius: 18px;
+    cursor: pointer;
+}
+.momo-be-toggle-container .switch-input,
+.momo-be-toggle-container.disabled input[type="checkbox"].switch-input:disabled{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.momo-be-toggle-container .switch-label{
+    position: relative;
+    display: block;
+    height: inherit;
+    font-size: 10px;
+    text-transform: uppercase;
+    background: #90999d;
+    border-radius: inherit;
+    -webkit-transition: 0.15s ease-out;
+    -moz-transition: 0.15s ease-out;
+    -o-transition: 0.15s ease-out;
+    transition: 0.15s ease-out;
+    -webkit-transition-property: opacity background;
+    -moz-transition-property: opacity background;
+    -o-transition-property: opacity background;
+    transition-property: opacity background;
+}
+.momo-be-toggle-container.disabled .switch-label{
+    background: #dce2e6;
+}
+.momo-be-toggle-container .switch-label:before, 
+.momo-be-toggle-container .switch-label:after {
+    position: absolute;
+    top: 50%;
+    margin-top: -.5em;
+    line-height: 1;
+    -webkit-transition: inherit;
+    -moz-transition: inherit;
+    -o-transition: inherit;
+    transition: inherit;
+}
+.momo-be-toggle-container .switch-label:before {
+    content: attr(data-off);
+    right: 11px;
+    color: #352D39;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+    opacity: 0;
+}
+
+.momo-be-toggle-container .switch-label:after {
+    content: attr(data-on);
+    left: 11px;
+    color: #FFF;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+}
+
+.momo-be-toggle-container .switch-input:checked ~ .switch-label {
+    background: #FF6978;
+}
+
+.momo-be-toggle-container .switch-input:checked ~ .switch-label:before {
+    opacity: 0;
+}
+
+.momo-be-toggle-container .switch-input:checked ~ .switch-label:after {
+    opacity: 0;
+}
+.momo-be-toggle-container .switch-handle {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 18px;
+    height: 18px;
+    background: white;
+    border-radius: 10px;
+    -webkit-transition: left 0.15s ease-out;
+    -moz-transition: left 0.15s ease-out;
+    -o-transition: left 0.15s ease-out;
+    transition: left 0.15s ease-out;
+}
+
+.momo-be-toggle-container .switch-handle:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -6px 0 0 -6px;
+    width: 12px;
+    height: 12px;
+    background: #f9f9f9;
+    border-radius: 6px;
+}
+.momo-be-toggle-container .switch-input:checked ~ .switch-handle {
+    left: 23px;
+    box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+.momo-be-toggle-container.disabled .switch-input{
+    pointer-events:none!important;
+}
+.momo-be-tc-yes-container{
+    /* border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb; */
+    padding: 15px;
+    background: #f7f7f7;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-right: -15px;
+    margin-left: -15px;
+    display: none;
+}
+
+.momo-be-tc-yes-container.active{
+    display: block;
+    padding-left: 40px;
+}
+.momo-be-tc-yes-container .textarea_info{
+    padding: 12px;
+    font-style: italic;
+}
+/*** Ends Toggle Switch ***/
+/*** Range Slider ***/
+.momo-be-range-slider-container {
+    width: 100%;
+    position: relative;
+}
+.momo-be-range-slider-container label{
+    display: block;
+    cursor: default;
+}
+.momo-be-range-slider {
+    border: 1px solid #d3d3d3;
+    background: #efefef;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    opacity: 0.9;
+    width: 90%;
+    height: 11.5px;
+    border-radius: 15px;
+}
+.momo-be-range-slider:focus,
+#momo-be-form input.momo-be-range-slider:focus,
+.momo-be-mb-form input.momo-be-range-slider:focus{
+    outline: none;
+    box-shadow: none;
+    border-color: #d3d3d3;
+}
+.momo-be-range-slider:hover {
+    opacity: 1;
+}
+
+.momo-be-range-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 17px;
+    height: 17px;
+    background: #FF6978;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.momo-be-range-slider::-moz-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 17px;
+    height: 17px;
+    background: #FF6978;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+.momo-be-range-slider::-webkit-slider-runnable-track {
+    /* height: 8px; */
+    border: none;
+}
+.momo-be-range-slider::-moz-range-progress {
+    background-color: #FF6978;
+    height: 95%;
+    /* border: 1px solid #efefef; */
+    border-radius: 15px;
+}
+.momo-be-range-slider::-moz-range-track {  
+    /* background-color: #3b3b3b;
+    height: 8px; */
+}
+.momo-be-range-slider::-ms-fill-lower {
+    background-color: #FF6978;
+    height: 8px;
+    border: 2px solid #efefef;
+    border-radius: 15px;
+}
+.momo-be-range-slider::-ms-fill-upper {  
+    background-color: #efefef;
+    /* height: 8px; */
+}
+.momo-range-input-holder{
+    position: relative;
+}
+.momo-be-rs-value {
+    position: absolute;
+    top: -20px;
+    left: 45%;
+    font-size: 12px;
+    margin-top: 10px;
+    transform: translateX(-50%);
+    background: #605e5e;
+    padding: 4px;
+    border-radius: 8px;
+    color: #FFF;
+    display: none;
+}
+.momo-be-range-slider-container .momo-be-rs-value{
+    top: -40px;
+    left: 50%;
+}
+.momo-be-range-slider:hover + .momo-be-rs-value{
+    display: block;
+}
+/*** Ends Range Slider ***/
+/***** Form Elements ******/
+.momo-be-section-block-normal{
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+.momo-be-hr-line{
+    border-bottom: 1px solid #dbdbdb;
+    margin-bottom: 18px;
+    margin-top: 18px;
+    display: block;
+}
+.momo-be-hr-line-full{
+    margin-left: -15px;
+    margin-right: -15px;
+    border-bottom: 1px solid #dbdbdb;
+    margin-bottom: 18px;
+    margin-top: 18px;
+    display: block;
+}
+.momo-be-hr-line-blank{
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 18px;
+    margin-top: 18px;
+    display: block;
+    border-bottom:1px solid #f7dbdb;
+    clear: both;
+}
+span.momo-be-note{
+    margin:12px 0;
+    font: 13px 'open sans';
+    font-style: italic;
+    display: block;
+    padding: 5px 15px;
+}
+.momo-be-section{
+    margin: 12px 0;
+}
+.momo-be-section-toggle{
+    margin: 18px 0;
+}
+.momo-be-section-header{
+    background:#f1f1f1;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.momo-be-option-block,
+.momo-be-buttons-block,
+.momo-be-section-block,
+.momo-be-grey-block{
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 15px;
+    background: #f7f7f7;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-right: -15px;
+    margin-left: -15px;
+    display: none;
+    /* overflow: hidden; */
+}
+.momo-be-grey-block{
+    border-top: none;
+    border-bottom: none;
+    display: block;
+}
+.momo-be-section-block h2.momo-section-block{
+    font-weight: 800!important;
+    padding: 0!important;
+    margin: 0!important;
+    font-size: 14px;
+    color: #1e1e1e;
+}
+.momo-be-section-block h3.momo-section-block{
+    font-weight: 500!important;
+    padding: 0!important;
+    margin: 0!important;
+    font-size: 13px;
+}
+.momo-be-switch-block{
+    padding: 15px;
+    background: #f7f7f7;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-right: -15px;
+    margin-left: -15px;
+    border-bottom: 1px solid #dbdbdb;
+    /* overflow: hidden; */
+}
+.momo-be-inline-after{
+    display: inline-flex;
+}
+.momo-be-inline-after .momo-be-switch-block{
+    margin-left: 0;
+    padding: 8px 15px;
+}
+.momo-be-inline-after .momo-be-switch-block,
+.momo-be-inline-before .momo-be-switch-block {
+    padding: 4px;
+    border-bottom: none;
+}
+.momo-be-inline-before{
+    display: inline-flex;
+}
+.momo-be-inline-before .momo-be-switch-block {
+    margin-right: 14px;
+    margin-left: 6px;
+}
+.momo-mb-be-label-blank.momo-be-switch-block{
+    margin-left: 200px;
+    padding: 5px 15px;
+}
+.momo-be-mb-form  .momo-be-tc-yes-container .momo-be-section-block{
+    border:none;
+    padding: 0;
+}
+.momo-be-buttons-block,
+.momo-be-section-block{
+    display: block;
+}
+.momo-be-buttons-block.import-section{
+    padding-bottom: 0;
+    padding-top: 0;
+}
+@-webkit-keyframes BlockFadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+@keyframes BlockFadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+.momo-be-option-block.show{
+    display: block;
+    -webkit-animation: BlockFadeIn 1s;
+    animation: BlockFadeIn 1s;
+}
+.momo-be-option-block input{
+    width: 300px;
+    color:
+    #666666;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+.momo-be-msg-block{
+    background-color:#f7f9e8;
+    border-left: 4px solid #afa40d;
+    color: #201d16;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0;
+}
+.momo-be-msg-block{
+    display: none;
+}
+.momo-be-msg-block.show{
+    display: block;
+}
+.momo-be-msg-block.info{
+    background: #cce5ff;
+    border-left-color: #004085;
+    color: #004085;
+}
+.momo-be-msg-block.warning{
+    background: #f2dede;
+    color: #a94442;
+    border-left-color:#a94442;
+}
+.momo-be-msg-block.notontop{
+    margin-top: 20px;
+}
+.momo-be-msg-block.momo-fe-bottom{
+    border:none;
+    padding: 16px 22px;
+    background-color: #FF6978;
+    color: #FFF;
+    font-weight: 600;
+    margin: -15px;
+    border-radius: 0;
+    margin-top: 15px;
+}
+.momo-be-msg-block.momo-fe-bottom a.link,
+.momo-be-msg-block.momo-fe-bottom span.link i{
+    color: #f3e84b!important;;
+}
+/** Metabox **/
+.momo-be-mb-side{}
+/** Basic CSS */
+
+#momo_be_mb_add_headings_afteryes,
+#momo_be_mb_add_image_afteryes{
+    border: none;
+    padding-top: 0;
+    padding-left: 90px;
+    padding-bottom: 0;
+}
+@media only screen and (max-width: 900px){
+    .momo-be-tab-table ul.momo-be-main-tab{
+        width: auto;
+    }
+    .momo-be-main-tab li a span{
+        display: none;
+    }
+    .momo-be-main-tab li a{
+        min-width: 20px;
+        text-align: center;
+    }
+    .momo-be-main-tab li a i{
+        padding-right: 0;
+    }
+}
+.momo-flex-columns,
+.momo-flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.momo-flex-column{
+    width: auto;
+    padding-left: 18px;
+}
+.momo-flex-column .momo-be-toggle-container-label{
+    padding-left: 2px;
+}
+.momo-three-column {
+    flex: 33.33%;
+}
+.momo-be-section-generated-content h2,
+.momo-be-section-generated-headings h2{
+    padding-left:0!important;
+    padding-bottom:0!important;
+}
+@media (min-width: 48em) {
+    .columns {
+      flex-wrap: nowrap;
+    }
+}
+.momo-cover-asterix{
+    position: relative;
+    display: inline-block;
+    min-width: 60%;
+    width: 80%;
+    max-width: 250px;
+    line-height: 2;
+    min-height: 30px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    border: 1px solid #b3afaf;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+    background-color: #fff;
+    color: #32373c;
+    margin-top: 5px;
+}
+.momo-clear-api{
+    color: #2271b1;
+    font-size: 13px;
+    line-height: 1.5;
+    cursor: pointer;
+    border-bottom: 1px solid #2271b1;
+    margin-left: 12px;
+}
+/** Single Create Page **/
+.auto-content-generator_page_momoacg-create{
+    background-color: #F7F7F7;
+}
+.momo-acg-single-page-create {
+    padding: 26px;
+}
+.momo-acg-single-page-create span.header-title{
+    font-weight: 800;
+    font-size: 32px;
+}
+div.momo-acg-single-page-create div.momo-be-mb-form div.momo-be-section-block{
+    border-top: none;
+    border-bottom: none;
+}
+p.momo-be-support-para{
+    font-size: 16px;
+    line-height: 36px;
+}
+p.momo-be-support-para.momo-support-link{
+    text-align: center;
+}
+p.momo-be-support-para.momo-support-link a{
+    text-decoration: none;
+}
+.momo-be-textarea-style{
+    width: auto;
+    height: 200px;
+    padding: 1em;
+    font-size: 12px;
+    overflow: scroll;
+    background-color: #0c0c0c;
+    color: #FFF;
+}
+.momo-be-textarea-style span{
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.momo-be-textarea-style span.bad{
+    color: red;
+}
+.momo-be-textarea-style span.good{
+    color: green;
+}
+.momo-be-textarea-style span.detail{
+    color: yellow;
+}
+.momo-be-textarea-style span.code{
+    color: #2f92e8;
+}
+.momo-be-textarea-style p{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2px;
+}
+/***** Ends Form Elements ****/
